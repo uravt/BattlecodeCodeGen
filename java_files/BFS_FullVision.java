@@ -681,10 +681,10 @@ public class BFS_FullVision
       cost39 = exists39 && rc.senseMapInfo(l39).getPaint().isAlly() ? 10 : 20;
       
       l40 = getLocationFromIndex(40, start);
-      dist40 = 1000000;
+      dist40 = 0;
       h40 = l40.distanceSquaredTo(destination);
-      exists40 = rc.onTheMap(l40) && rc.sensePassability(l40) && !rc.canSenseRobotAtLocation(l40);
-      cost40 = exists40 && rc.senseMapInfo(l40).getPaint().isAlly() ? 10 : 20;
+      exists40 = true;
+      cost40 = 0;
       
       l41 = getLocationFromIndex(41, start);
       dist41 = 1000000;
@@ -892,7 +892,7 @@ public class BFS_FullVision
       
    }
    
-   public static void pathfind(RobotController rc, MapLocation destination) throws GameActionException
+   public static Direction pathfind(RobotController rc, MapLocation destination) throws GameActionException
    {
       MapLocation start = rc.getLocation();
       initializeVariables(rc, destination, start);
@@ -5748,10 +5748,6 @@ public class BFS_FullVision
          }
       }
       
-      Direction dirToMove = dirToMove(closestIndex);
-      if(rc.canMove(dirToMove))
-      {
-         rc.move(dirToMove);
-      }
+      return dirToMove(closestIndex);
    }
 }

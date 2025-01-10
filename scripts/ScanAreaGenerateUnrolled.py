@@ -1,4 +1,4 @@
-from scripts.main import FileWriter
+from scripts.BFS24_11x11 import FileWriter
 
 fw = FileWriter(open("../java_files/UnrolledScan.java", "w"))
 

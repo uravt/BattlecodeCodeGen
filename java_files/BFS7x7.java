@@ -1,302 +1,301 @@
 package PathfindingTest;
 import battlecode.common.*;
-public class BFS 
-
-static MapLocation l0;
-static int dist0;
-static int h0;
-static boolean exists0;
-static int cost0;
-
-static MapLocation l1;
-static int dist1;
-static int h1;
-static boolean exists1;
-static int cost1;
-
-static MapLocation l2;
-static int dist2;
-static int h2;
-static boolean exists2;
-static int cost2;
-
-static MapLocation l3;
-static int dist3;
-static int h3;
-static boolean exists3;
-static int cost3;
-
-static MapLocation l4;
-static int dist4;
-static int h4;
-static boolean exists4;
-static int cost4;
-
-static MapLocation l5;
-static int dist5;
-static int h5;
-static boolean exists5;
-static int cost5;
-
-static MapLocation l6;
-static int dist6;
-static int h6;
-static boolean exists6;
-static int cost6;
-
-static MapLocation l7;
-static int dist7;
-static int h7;
-static boolean exists7;
-static int cost7;
-
-static MapLocation l8;
-static int dist8;
-static int h8;
-static boolean exists8;
-static int cost8;
-
-static MapLocation l9;
-static int dist9;
-static int h9;
-static boolean exists9;
-static int cost9;
-
-static MapLocation l10;
-static int dist10;
-static int h10;
-static boolean exists10;
-static int cost10;
-
-static MapLocation l11;
-static int dist11;
-static int h11;
-static boolean exists11;
-static int cost11;
-
-static MapLocation l12;
-static int dist12;
-static int h12;
-static boolean exists12;
-static int cost12;
-
-static MapLocation l13;
-static int dist13;
-static int h13;
-static boolean exists13;
-static int cost13;
-
-static MapLocation l14;
-static int dist14;
-static int h14;
-static boolean exists14;
-static int cost14;
-
-static MapLocation l15;
-static int dist15;
-static int h15;
-static boolean exists15;
-static int cost15;
-
-static MapLocation l16;
-static int dist16;
-static int h16;
-static boolean exists16;
-static int cost16;
-
-static MapLocation l17;
-static int dist17;
-static int h17;
-static boolean exists17;
-static int cost17;
-
-static MapLocation l18;
-static int dist18;
-static int h18;
-static boolean exists18;
-static int cost18;
-
-static MapLocation l19;
-static int dist19;
-static int h19;
-static boolean exists19;
-static int cost19;
-
-static MapLocation l20;
-static int dist20;
-static int h20;
-static boolean exists20;
-static int cost20;
-
-static MapLocation l21;
-static int dist21;
-static int h21;
-static boolean exists21;
-static int cost21;
-
-static MapLocation l22;
-static int dist22;
-static int h22;
-static boolean exists22;
-static int cost22;
-
-static MapLocation l23;
-static int dist23;
-static int h23;
-static boolean exists23;
-static int cost23;
-
-static MapLocation l24;
-static int dist24;
-static int h24;
-static boolean exists24;
-static int cost24;
-
-static MapLocation l25;
-static int dist25;
-static int h25;
-static boolean exists25;
-static int cost25;
-
-static MapLocation l26;
-static int dist26;
-static int h26;
-static boolean exists26;
-static int cost26;
-
-static MapLocation l27;
-static int dist27;
-static int h27;
-static boolean exists27;
-static int cost27;
-
-static MapLocation l28;
-static int dist28;
-static int h28;
-static boolean exists28;
-static int cost28;
-
-static MapLocation l29;
-static int dist29;
-static int h29;
-static boolean exists29;
-static int cost29;
-
-static MapLocation l30;
-static int dist30;
-static int h30;
-static boolean exists30;
-static int cost30;
-
-static MapLocation l31;
-static int dist31;
-static int h31;
-static boolean exists31;
-static int cost31;
-
-static MapLocation l32;
-static int dist32;
-static int h32;
-static boolean exists32;
-static int cost32;
-
-static MapLocation l33;
-static int dist33;
-static int h33;
-static boolean exists33;
-static int cost33;
-
-static MapLocation l34;
-static int dist34;
-static int h34;
-static boolean exists34;
-static int cost34;
-
-static MapLocation l35;
-static int dist35;
-static int h35;
-static boolean exists35;
-static int cost35;
-
-static MapLocation l36;
-static int dist36;
-static int h36;
-static boolean exists36;
-static int cost36;
-
-static MapLocation l37;
-static int dist37;
-static int h37;
-static boolean exists37;
-static int cost37;
-
-static MapLocation l38;
-static int dist38;
-static int h38;
-static boolean exists38;
-static int cost38;
-
-static MapLocation l39;
-static int dist39;
-static int h39;
-static boolean exists39;
-static int cost39;
-
-static MapLocation l40;
-static int dist40;
-static int h40;
-static boolean exists40;
-static int cost40;
-
-static MapLocation l41;
-static int dist41;
-static int h41;
-static boolean exists41;
-static int cost41;
-
-static MapLocation l42;
-static int dist42;
-static int h42;
-static boolean exists42;
-static int cost42;
-
-static MapLocation l43;
-static int dist43;
-static int h43;
-static boolean exists43;
-static int cost43;
-
-static MapLocation l44;
-static int dist44;
-static int h44;
-static boolean exists44;
-static int cost44;
-
-static MapLocation l45;
-static int dist45;
-static int h45;
-static boolean exists45;
-static int cost45;
-
-static MapLocation l46;
-static int dist46;
-static int h46;
-static boolean exists46;
-static int cost46;
-
-static MapLocation l47;
-static int dist47;
-static int h47;
-static boolean exists47;
-static int cost47;
-
-static MapLocation l48;
-static int dist48;
-static int h48;
-static boolean exists48;
-static int cost48;
-
+public class BFS
 {
+   static MapLocation l0;
+   static int dist0;
+   static int h0;
+   static boolean exists0;
+   static int cost0;
+   
+   static MapLocation l1;
+   static int dist1;
+   static int h1;
+   static boolean exists1;
+   static int cost1;
+   
+   static MapLocation l2;
+   static int dist2;
+   static int h2;
+   static boolean exists2;
+   static int cost2;
+   
+   static MapLocation l3;
+   static int dist3;
+   static int h3;
+   static boolean exists3;
+   static int cost3;
+   
+   static MapLocation l4;
+   static int dist4;
+   static int h4;
+   static boolean exists4;
+   static int cost4;
+   
+   static MapLocation l5;
+   static int dist5;
+   static int h5;
+   static boolean exists5;
+   static int cost5;
+   
+   static MapLocation l6;
+   static int dist6;
+   static int h6;
+   static boolean exists6;
+   static int cost6;
+   
+   static MapLocation l7;
+   static int dist7;
+   static int h7;
+   static boolean exists7;
+   static int cost7;
+   
+   static MapLocation l8;
+   static int dist8;
+   static int h8;
+   static boolean exists8;
+   static int cost8;
+   
+   static MapLocation l9;
+   static int dist9;
+   static int h9;
+   static boolean exists9;
+   static int cost9;
+   
+   static MapLocation l10;
+   static int dist10;
+   static int h10;
+   static boolean exists10;
+   static int cost10;
+   
+   static MapLocation l11;
+   static int dist11;
+   static int h11;
+   static boolean exists11;
+   static int cost11;
+   
+   static MapLocation l12;
+   static int dist12;
+   static int h12;
+   static boolean exists12;
+   static int cost12;
+   
+   static MapLocation l13;
+   static int dist13;
+   static int h13;
+   static boolean exists13;
+   static int cost13;
+   
+   static MapLocation l14;
+   static int dist14;
+   static int h14;
+   static boolean exists14;
+   static int cost14;
+   
+   static MapLocation l15;
+   static int dist15;
+   static int h15;
+   static boolean exists15;
+   static int cost15;
+   
+   static MapLocation l16;
+   static int dist16;
+   static int h16;
+   static boolean exists16;
+   static int cost16;
+   
+   static MapLocation l17;
+   static int dist17;
+   static int h17;
+   static boolean exists17;
+   static int cost17;
+   
+   static MapLocation l18;
+   static int dist18;
+   static int h18;
+   static boolean exists18;
+   static int cost18;
+   
+   static MapLocation l19;
+   static int dist19;
+   static int h19;
+   static boolean exists19;
+   static int cost19;
+   
+   static MapLocation l20;
+   static int dist20;
+   static int h20;
+   static boolean exists20;
+   static int cost20;
+   
+   static MapLocation l21;
+   static int dist21;
+   static int h21;
+   static boolean exists21;
+   static int cost21;
+   
+   static MapLocation l22;
+   static int dist22;
+   static int h22;
+   static boolean exists22;
+   static int cost22;
+   
+   static MapLocation l23;
+   static int dist23;
+   static int h23;
+   static boolean exists23;
+   static int cost23;
+   
+   static MapLocation l24;
+   static int dist24;
+   static int h24;
+   static boolean exists24;
+   static int cost24;
+   
+   static MapLocation l25;
+   static int dist25;
+   static int h25;
+   static boolean exists25;
+   static int cost25;
+   
+   static MapLocation l26;
+   static int dist26;
+   static int h26;
+   static boolean exists26;
+   static int cost26;
+   
+   static MapLocation l27;
+   static int dist27;
+   static int h27;
+   static boolean exists27;
+   static int cost27;
+   
+   static MapLocation l28;
+   static int dist28;
+   static int h28;
+   static boolean exists28;
+   static int cost28;
+   
+   static MapLocation l29;
+   static int dist29;
+   static int h29;
+   static boolean exists29;
+   static int cost29;
+   
+   static MapLocation l30;
+   static int dist30;
+   static int h30;
+   static boolean exists30;
+   static int cost30;
+   
+   static MapLocation l31;
+   static int dist31;
+   static int h31;
+   static boolean exists31;
+   static int cost31;
+   
+   static MapLocation l32;
+   static int dist32;
+   static int h32;
+   static boolean exists32;
+   static int cost32;
+   
+   static MapLocation l33;
+   static int dist33;
+   static int h33;
+   static boolean exists33;
+   static int cost33;
+   
+   static MapLocation l34;
+   static int dist34;
+   static int h34;
+   static boolean exists34;
+   static int cost34;
+   
+   static MapLocation l35;
+   static int dist35;
+   static int h35;
+   static boolean exists35;
+   static int cost35;
+   
+   static MapLocation l36;
+   static int dist36;
+   static int h36;
+   static boolean exists36;
+   static int cost36;
+   
+   static MapLocation l37;
+   static int dist37;
+   static int h37;
+   static boolean exists37;
+   static int cost37;
+   
+   static MapLocation l38;
+   static int dist38;
+   static int h38;
+   static boolean exists38;
+   static int cost38;
+   
+   static MapLocation l39;
+   static int dist39;
+   static int h39;
+   static boolean exists39;
+   static int cost39;
+   
+   static MapLocation l40;
+   static int dist40;
+   static int h40;
+   static boolean exists40;
+   static int cost40;
+   
+   static MapLocation l41;
+   static int dist41;
+   static int h41;
+   static boolean exists41;
+   static int cost41;
+   
+   static MapLocation l42;
+   static int dist42;
+   static int h42;
+   static boolean exists42;
+   static int cost42;
+   
+   static MapLocation l43;
+   static int dist43;
+   static int h43;
+   static boolean exists43;
+   static int cost43;
+   
+   static MapLocation l44;
+   static int dist44;
+   static int h44;
+   static boolean exists44;
+   static int cost44;
+   
+   static MapLocation l45;
+   static int dist45;
+   static int h45;
+   static boolean exists45;
+   static int cost45;
+   
+   static MapLocation l46;
+   static int dist46;
+   static int h46;
+   static boolean exists46;
+   static int cost46;
+   
+   static MapLocation l47;
+   static int dist47;
+   static int h47;
+   static boolean exists47;
+   static int cost47;
+   
+   static MapLocation l48;
+   static int dist48;
+   static int h48;
+   static boolean exists48;
+   static int cost48;
+   
    static Direction[][] lookup;
    
    public static MapLocation getLocationFromIndex(int nodeIndex, MapLocation center)
@@ -355,7 +354,7 @@ static int cost48;
         return null;
   }
 
-   public static void pathfind(RobotController rc, MapLocation destination) throws GameActionException
+   public static Direction pathfind(RobotController rc, MapLocation destination) throws GameActionException
    {
       MapLocation start = rc.getLocation();
       lookup = new Direction[7][7];
@@ -601,10 +600,10 @@ static int cost48;
       cost39 = exists39 && rc.senseMapInfo(l39).getPaint().isAlly() ? 1 : 2;
       
       l40 = getLocationFromIndex(40, start);
-      dist40 = 0;
+      dist40 = 1000000;
       h40 = l40.distanceSquaredTo(destination);
-      exists40 = true;
-      cost40 = 0;
+      exists40 = rc.onTheMap(l40) && rc.sensePassability(l40) && !rc.canSenseRobotAtLocation(l40);
+      cost40 = exists40 && rc.senseMapInfo(l40).getPaint().isAlly() ? 1 : 2;
       
       l41 = getLocationFromIndex(41, start);
       dist41 = 1000000;
@@ -3924,498 +3923,6 @@ static int cost48;
          }
       }
       
-      switch(closestIndex)
-      {
-         case 0:
-         {
-            Direction dirToMove = dirToMove(0);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 1:
-         {
-            Direction dirToMove = dirToMove(1);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 2:
-         {
-            Direction dirToMove = dirToMove(2);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 3:
-         {
-            Direction dirToMove = dirToMove(3);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 4:
-         {
-            Direction dirToMove = dirToMove(4);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 5:
-         {
-            Direction dirToMove = dirToMove(5);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 6:
-         {
-            Direction dirToMove = dirToMove(6);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 7:
-         {
-            Direction dirToMove = dirToMove(7);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 8:
-         {
-            Direction dirToMove = dirToMove(8);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 9:
-         {
-            Direction dirToMove = dirToMove(9);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 10:
-         {
-            Direction dirToMove = dirToMove(10);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 11:
-         {
-            Direction dirToMove = dirToMove(11);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 12:
-         {
-            Direction dirToMove = dirToMove(12);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 13:
-         {
-            Direction dirToMove = dirToMove(13);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 14:
-         {
-            Direction dirToMove = dirToMove(14);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 15:
-         {
-            Direction dirToMove = dirToMove(15);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 16:
-         {
-            Direction dirToMove = dirToMove(16);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 17:
-         {
-            Direction dirToMove = dirToMove(17);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 18:
-         {
-            Direction dirToMove = dirToMove(18);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 19:
-         {
-            Direction dirToMove = dirToMove(19);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 20:
-         {
-            Direction dirToMove = dirToMove(20);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 21:
-         {
-            Direction dirToMove = dirToMove(21);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 22:
-         {
-            Direction dirToMove = dirToMove(22);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 23:
-         {
-            Direction dirToMove = dirToMove(23);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 24:
-         {
-            Direction dirToMove = dirToMove(24);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 25:
-         {
-            Direction dirToMove = dirToMove(25);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 26:
-         {
-            Direction dirToMove = dirToMove(26);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 27:
-         {
-            Direction dirToMove = dirToMove(27);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 28:
-         {
-            Direction dirToMove = dirToMove(28);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 29:
-         {
-            Direction dirToMove = dirToMove(29);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 30:
-         {
-            Direction dirToMove = dirToMove(30);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 31:
-         {
-            Direction dirToMove = dirToMove(31);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 32:
-         {
-            Direction dirToMove = dirToMove(32);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 33:
-         {
-            Direction dirToMove = dirToMove(33);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 34:
-         {
-            Direction dirToMove = dirToMove(34);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 35:
-         {
-            Direction dirToMove = dirToMove(35);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 36:
-         {
-            Direction dirToMove = dirToMove(36);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 37:
-         {
-            Direction dirToMove = dirToMove(37);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 38:
-         {
-            Direction dirToMove = dirToMove(38);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 39:
-         {
-            Direction dirToMove = dirToMove(39);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 40:
-         {
-            Direction dirToMove = dirToMove(40);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 41:
-         {
-            Direction dirToMove = dirToMove(41);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 42:
-         {
-            Direction dirToMove = dirToMove(42);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 43:
-         {
-            Direction dirToMove = dirToMove(43);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 44:
-         {
-            Direction dirToMove = dirToMove(44);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 45:
-         {
-            Direction dirToMove = dirToMove(45);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 46:
-         {
-            Direction dirToMove = dirToMove(46);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 47:
-         {
-            Direction dirToMove = dirToMove(47);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-         case 48:
-         {
-            Direction dirToMove = dirToMove(48);
-            if(rc.canMove(dirToMove))
-            {
-               rc.move(dirToMove);
-            }
-            break;
-         }
-         
-      }
+      return dirToMove(closestIndex);
    }
 }

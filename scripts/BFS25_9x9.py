@@ -309,6 +309,15 @@ fw.openBracket()
 for i in range(0, size * size):
     if i in banned_nodes:
         continue
+    if i == size * size // 2:
+        fw.writeLine("l" + str(i) + " = getLocationFromIndex(" + str(i) + ", start);")
+        fw.writeLine("dist" + str(i) + " = 0;")
+        fw.writeLine("h" + str(i) + " = l" + str(i) + ".distanceSquaredTo(destination);")
+        fw.writeLine(
+            "exists" + str(i) + " = " + "true;")
+        fw.writeLine("cost" + str(i) + " = " + "0;")
+        fw.writeLine("")
+        continue
     fw.writeLine("l" + str(i) + " = getLocationFromIndex(" + str(i) + ", start);")
     fw.writeLine("dist" + str(i) + " = 1000000;")
     fw.writeLine("h" + str(i) + " = l" + str(i) + ".distanceSquaredTo(destination);")
@@ -318,7 +327,7 @@ for i in range(0, size * size):
     fw.writeLine("")
 fw.closeBracket()
 fw.writeLine("")
-fw.writeLine("public static void pathfind(RobotController rc, MapLocation destination) throws GameActionException")
+fw.writeLine("public static Direction pathfind(RobotController rc, MapLocation destination) throws GameActionException")
 fw.openBracket()
 fw.writeLine("MapLocation start = rc.getLocation();")
 fw.writeLine("initializeVariables(rc, destination, start);")
@@ -356,11 +365,12 @@ while len(unvisitedNodesQueue) > 0:
         fw.closeBracket()
     fw.closeBracket()
 fw.writeLine("")
-fw.writeLine("Direction dirToMove = dirToMove(closestIndex);")
-fw.writeLine("if(rc.canMove(dirToMove))")
-fw.openBracket()
-fw.writeLine("rc.move(dirToMove);")
-fw.closeBracket()
+fw.writeLine("return dirToMove(closestIndex);")
+# fw.writeLine("Direction dirToMove = dirToMove(closestIndex);")
+# fw.writeLine("if(rc.canMove(dirToMove))")
+# fw.openBracket()
+# fw.writeLine("rc.move(dirToMove);")
+# fw.closeBracket()
 # fw.writeLine("switch(closestIndex)")
 # fw.openBracket()
 # for i in range(0, size * size):
