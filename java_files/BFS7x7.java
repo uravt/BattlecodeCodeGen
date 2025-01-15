@@ -1,6 +1,6 @@
 package PathfindingTest;
 import battlecode.common.*;
-public class BFS
+public class BFS_7x7
 {
    static MapLocation l0;
    static int dist0;
@@ -657,6 +657,7 @@ public class BFS
       int closestIndex = -1;
       if(exists24)
       {
+         rc.setIndicatorDot(l24, 0, 255,0);
          if(exists16 && dist24 + cost16 < dist16)
          {
             dist16 = dist24 + cost16;
@@ -740,6 +741,7 @@ public class BFS
       }
       if(exists16)
       {
+         rc.setIndicatorDot(l16, 0, 255,0);
          if(exists8 && dist16 + cost8 < dist8)
          {
             dist8 = dist16 + cost8;
@@ -823,6 +825,7 @@ public class BFS
       }
       if(exists17)
       {
+         rc.setIndicatorDot(l17, 0, 255,0);
          if(exists9 && dist17 + cost9 < dist9)
          {
             dist9 = dist17 + cost9;
@@ -906,6 +909,7 @@ public class BFS
       }
       if(exists18)
       {
+         rc.setIndicatorDot(l18, 0, 255,0);
          if(exists10 && dist18 + cost10 < dist10)
          {
             dist10 = dist18 + cost10;
@@ -989,6 +993,7 @@ public class BFS
       }
       if(exists23)
       {
+         rc.setIndicatorDot(l23, 0, 255,0);
          if(exists15 && dist23 + cost15 < dist15)
          {
             dist15 = dist23 + cost15;
@@ -1072,6 +1077,7 @@ public class BFS
       }
       if(exists25)
       {
+         rc.setIndicatorDot(l25, 0, 255,0);
          if(exists17 && dist25 + cost17 < dist17)
          {
             dist17 = dist25 + cost17;
@@ -1155,6 +1161,7 @@ public class BFS
       }
       if(exists30)
       {
+         rc.setIndicatorDot(l30, 0, 255,0);
          if(exists22 && dist30 + cost22 < dist22)
          {
             dist22 = dist30 + cost22;
@@ -1238,6 +1245,7 @@ public class BFS
       }
       if(exists31)
       {
+         rc.setIndicatorDot(l31, 0, 255,0);
          if(exists23 && dist31 + cost23 < dist23)
          {
             dist23 = dist31 + cost23;
@@ -1321,6 +1329,7 @@ public class BFS
       }
       if(exists32)
       {
+         rc.setIndicatorDot(l32, 0, 255,0);
          if(exists24 && dist32 + cost24 < dist24)
          {
             dist24 = dist32 + cost24;
@@ -1404,6 +1413,7 @@ public class BFS
       }
       if(exists8)
       {
+         rc.setIndicatorDot(l8, 0, 255,0);
          if(exists0 && dist8 + cost0 < dist0)
          {
             dist0 = dist8 + cost0;
@@ -1487,6 +1497,7 @@ public class BFS
       }
       if(exists9)
       {
+         rc.setIndicatorDot(l9, 0, 255,0);
          if(exists1 && dist9 + cost1 < dist1)
          {
             dist1 = dist9 + cost1;
@@ -1570,6 +1581,7 @@ public class BFS
       }
       if(exists10)
       {
+         rc.setIndicatorDot(l10, 0, 255,0);
          if(exists2 && dist10 + cost2 < dist2)
          {
             dist2 = dist10 + cost2;
@@ -1653,6 +1665,7 @@ public class BFS
       }
       if(exists15)
       {
+         rc.setIndicatorDot(l15, 0, 255,0);
          if(exists7 && dist15 + cost7 < dist7)
          {
             dist7 = dist15 + cost7;
@@ -1736,6 +1749,7 @@ public class BFS
       }
       if(exists22)
       {
+         rc.setIndicatorDot(l22, 0, 255,0);
          if(exists14 && dist22 + cost14 < dist14)
          {
             dist14 = dist22 + cost14;
@@ -1819,6 +1833,7 @@ public class BFS
       }
       if(exists11)
       {
+         rc.setIndicatorDot(l11, 0, 255,0);
          if(exists3 && dist11 + cost3 < dist3)
          {
             dist3 = dist11 + cost3;
@@ -1902,6 +1917,7 @@ public class BFS
       }
       if(exists12)
       {
+         rc.setIndicatorDot(l12, 0, 255,0);
          if(exists4 && dist12 + cost4 < dist4)
          {
             dist4 = dist12 + cost4;
@@ -1985,6 +2001,7 @@ public class BFS
       }
       if(exists19)
       {
+         rc.setIndicatorDot(l19, 0, 255,0);
          if(exists11 && dist19 + cost11 < dist11)
          {
             dist11 = dist19 + cost11;
@@ -2068,6 +2085,7 @@ public class BFS
       }
       if(exists26)
       {
+         rc.setIndicatorDot(l26, 0, 255,0);
          if(exists18 && dist26 + cost18 < dist18)
          {
             dist18 = dist26 + cost18;
@@ -2151,6 +2169,7 @@ public class BFS
       }
       if(exists29)
       {
+         rc.setIndicatorDot(l29, 0, 255,0);
          if(exists21 && dist29 + cost21 < dist21)
          {
             dist21 = dist29 + cost21;
@@ -2234,6 +2253,7 @@ public class BFS
       }
       if(exists33)
       {
+         rc.setIndicatorDot(l33, 0, 255,0);
          if(exists25 && dist33 + cost25 < dist25)
          {
             dist25 = dist33 + cost25;
@@ -2317,6 +2337,7 @@ public class BFS
       }
       if(exists36)
       {
+         rc.setIndicatorDot(l36, 0, 255,0);
          if(exists28 && dist36 + cost28 < dist28)
          {
             dist28 = dist36 + cost28;
@@ -2400,6 +2421,7 @@ public class BFS
       }
       if(exists37)
       {
+         rc.setIndicatorDot(l37, 0, 255,0);
          if(exists29 && dist37 + cost29 < dist29)
          {
             dist29 = dist37 + cost29;
@@ -2483,6 +2505,7 @@ public class BFS
       }
       if(exists38)
       {
+         rc.setIndicatorDot(l38, 0, 255,0);
          if(exists30 && dist38 + cost30 < dist30)
          {
             dist30 = dist38 + cost30;
@@ -2566,6 +2589,7 @@ public class BFS
       }
       if(exists39)
       {
+         rc.setIndicatorDot(l39, 0, 255,0);
          if(exists31 && dist39 + cost31 < dist31)
          {
             dist31 = dist39 + cost31;
@@ -2649,6 +2673,7 @@ public class BFS
       }
       if(exists40)
       {
+         rc.setIndicatorDot(l40, 0, 255,0);
          if(exists32 && dist40 + cost32 < dist32)
          {
             dist32 = dist40 + cost32;
@@ -2732,6 +2757,7 @@ public class BFS
       }
       if(exists0)
       {
+         rc.setIndicatorDot(l0, 0, 255,0);
          if(exists1 && dist0 + cost1 < dist1)
          {
             dist1 = dist0 + cost1;
@@ -2765,6 +2791,7 @@ public class BFS
       }
       if(exists1)
       {
+         rc.setIndicatorDot(l1, 0, 255,0);
          if(exists0 && dist1 + cost0 < dist0)
          {
             dist0 = dist1 + cost0;
@@ -2818,6 +2845,7 @@ public class BFS
       }
       if(exists2)
       {
+         rc.setIndicatorDot(l2, 0, 255,0);
          if(exists1 && dist2 + cost1 < dist1)
          {
             dist1 = dist2 + cost1;
@@ -2871,6 +2899,7 @@ public class BFS
       }
       if(exists7)
       {
+         rc.setIndicatorDot(l7, 0, 255,0);
          if(exists0 && dist7 + cost0 < dist0)
          {
             dist0 = dist7 + cost0;
@@ -2924,6 +2953,7 @@ public class BFS
       }
       if(exists14)
       {
+         rc.setIndicatorDot(l14, 0, 255,0);
          if(exists7 && dist14 + cost7 < dist7)
          {
             dist7 = dist14 + cost7;
@@ -2977,6 +3007,7 @@ public class BFS
       }
       if(exists3)
       {
+         rc.setIndicatorDot(l3, 0, 255,0);
          if(exists2 && dist3 + cost2 < dist2)
          {
             dist2 = dist3 + cost2;
@@ -3030,6 +3061,7 @@ public class BFS
       }
       if(exists4)
       {
+         rc.setIndicatorDot(l4, 0, 255,0);
          if(exists3 && dist4 + cost3 < dist3)
          {
             dist3 = dist4 + cost3;
@@ -3083,6 +3115,7 @@ public class BFS
       }
       if(exists21)
       {
+         rc.setIndicatorDot(l21, 0, 255,0);
          if(exists14 && dist21 + cost14 < dist14)
          {
             dist14 = dist21 + cost14;
@@ -3136,6 +3169,7 @@ public class BFS
       }
       if(exists28)
       {
+         rc.setIndicatorDot(l28, 0, 255,0);
          if(exists21 && dist28 + cost21 < dist21)
          {
             dist21 = dist28 + cost21;
@@ -3189,6 +3223,7 @@ public class BFS
       }
       if(exists5)
       {
+         rc.setIndicatorDot(l5, 0, 255,0);
          if(exists4 && dist5 + cost4 < dist4)
          {
             dist4 = dist5 + cost4;
@@ -3242,6 +3277,7 @@ public class BFS
       }
       if(exists6)
       {
+         rc.setIndicatorDot(l6, 0, 255,0);
          if(exists5 && dist6 + cost5 < dist5)
          {
             dist5 = dist6 + cost5;
@@ -3275,6 +3311,7 @@ public class BFS
       }
       if(exists13)
       {
+         rc.setIndicatorDot(l13, 0, 255,0);
          if(exists5 && dist13 + cost5 < dist5)
          {
             dist5 = dist13 + cost5;
@@ -3328,6 +3365,7 @@ public class BFS
       }
       if(exists20)
       {
+         rc.setIndicatorDot(l20, 0, 255,0);
          if(exists12 && dist20 + cost12 < dist12)
          {
             dist12 = dist20 + cost12;
@@ -3381,6 +3419,7 @@ public class BFS
       }
       if(exists27)
       {
+         rc.setIndicatorDot(l27, 0, 255,0);
          if(exists19 && dist27 + cost19 < dist19)
          {
             dist19 = dist27 + cost19;
@@ -3434,6 +3473,7 @@ public class BFS
       }
       if(exists34)
       {
+         rc.setIndicatorDot(l34, 0, 255,0);
          if(exists26 && dist34 + cost26 < dist26)
          {
             dist26 = dist34 + cost26;
@@ -3487,6 +3527,7 @@ public class BFS
       }
       if(exists35)
       {
+         rc.setIndicatorDot(l35, 0, 255,0);
          if(exists28 && dist35 + cost28 < dist28)
          {
             dist28 = dist35 + cost28;
@@ -3540,6 +3581,7 @@ public class BFS
       }
       if(exists41)
       {
+         rc.setIndicatorDot(l41, 0, 255,0);
          if(exists33 && dist41 + cost33 < dist33)
          {
             dist33 = dist41 + cost33;
@@ -3593,6 +3635,7 @@ public class BFS
       }
       if(exists42)
       {
+         rc.setIndicatorDot(l42, 0, 255,0);
          if(exists35 && dist42 + cost35 < dist35)
          {
             dist35 = dist42 + cost35;
@@ -3626,6 +3669,7 @@ public class BFS
       }
       if(exists43)
       {
+         rc.setIndicatorDot(l43, 0, 255,0);
          if(exists35 && dist43 + cost35 < dist35)
          {
             dist35 = dist43 + cost35;
@@ -3679,6 +3723,7 @@ public class BFS
       }
       if(exists44)
       {
+         rc.setIndicatorDot(l44, 0, 255,0);
          if(exists36 && dist44 + cost36 < dist36)
          {
             dist36 = dist44 + cost36;
@@ -3732,6 +3777,7 @@ public class BFS
       }
       if(exists45)
       {
+         rc.setIndicatorDot(l45, 0, 255,0);
          if(exists37 && dist45 + cost37 < dist37)
          {
             dist37 = dist45 + cost37;
@@ -3785,6 +3831,7 @@ public class BFS
       }
       if(exists46)
       {
+         rc.setIndicatorDot(l46, 0, 255,0);
          if(exists38 && dist46 + cost38 < dist38)
          {
             dist38 = dist46 + cost38;
@@ -3838,6 +3885,7 @@ public class BFS
       }
       if(exists47)
       {
+         rc.setIndicatorDot(l47, 0, 255,0);
          if(exists39 && dist47 + cost39 < dist39)
          {
             dist39 = dist47 + cost39;
@@ -3891,6 +3939,7 @@ public class BFS
       }
       if(exists48)
       {
+         rc.setIndicatorDot(l48, 0, 255,0);
          if(exists40 && dist48 + cost40 < dist40)
          {
             dist40 = dist48 + cost40;

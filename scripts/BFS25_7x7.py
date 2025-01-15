@@ -36,6 +36,9 @@ class MapLocation:
                 return self.add(-1, 0)
             case Directions.NORTHWEST:
                 return self.add(-1, 1)
+    def distanceSqr(self, other):
+        return (other.x - self.x) * (other.x - self.x) + (other.y - self.y) * (other.y - self.y)
+
 
     def __sub__(self, other):
         return MapLocation(self.x - other.x, self.y - other.y)
@@ -281,12 +284,14 @@ while len(unvisitedNodesQueue) > 0:
     # if distance is lower change distance, assign direction
     fw.writeLine("if(exists" + str(nodeIndex) + ")")
     fw.openBracket()
+    fw.writeLine("rc.setIndicatorDot(l" + str(nodeIndex) + ", 0, 255,0);")
     for neighbor in neighbors7x7[nodeIndex]:
         neighborLocation = indexToMapLocation(neighbor, center)
         if (neighborLocation not in visitedNodes and neighborLocation not in unvisitedNodesQueue):
             unvisitedNodesQueue.append(neighborLocation)
         fw.writeLine("if(exists" + str(neighbor) + " && dist" + str(nodeIndex) + " + cost" + str(neighbor) +" < dist" + str(neighbor) + ")")
         fw.openBracket()
+
         fw.writeLine("dist" + str(neighbor) + " = dist" + str(nodeIndex) + " + cost" + str(neighbor) + ";")
         # FIX HOW CENTER CALCULATED
         fw.writeLine("lookup[indexToLocalY(" + str(neighbor) + ")][indexToLocalX(" + str(neighbor) + ")] = Direction." + MapLocation.directionFromDxDy(currentLocation - neighborLocation).name + ";")
